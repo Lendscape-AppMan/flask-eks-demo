@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: flask-app
+  namespace: argocd
+spec:
+  destination:
+    namespace: flask-app
+    server: https://kubernetes.default.svc
+  project: flask-app-project
+  source:
+    path: argocd/manifests/flask-app
+    repoURL: https://github.com/piomin/sample-terraform-kubernetes-argocd.git
+    targetRevision: HEAD
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
