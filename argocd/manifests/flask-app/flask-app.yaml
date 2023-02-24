@@ -6,7 +6,7 @@ metadata:
 spec:
   project: flask-app-project
   source:
-    repoURL: https://github.com/Lendscape-AppMan/flask-k8s-demo.git
+    repoURL: https://github.com/Lendscape-AppMan/flask-eks-demo.git
     targetRevision: HEAD
     path: argocd/manifests/flask-app/k8s-manifests
   destination:

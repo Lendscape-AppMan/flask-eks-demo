@@ -10,7 +10,7 @@ spec:
   project: flask-app-project
   source:
     path: argocd/manifests/flask-app
-    repoURL: https://github.com/Lendscape-AppMan/flask-k8s-demo.git
+    repoURL: https://github.com/Lendscape-AppMan/flask-eks-demo.git
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
