@@ -14,6 +14,6 @@ resource "helm_release" "argocd-apps" {
   namespace  = "argocd"
   repository = "https://argoproj.github.io/argo-helm"
   values = [
-    file("argocd/flask-application.yaml")
+    file("argocd/application.yaml")
   ]
 }
