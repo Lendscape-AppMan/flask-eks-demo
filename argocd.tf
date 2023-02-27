@@ -12,7 +12,6 @@ resource "helm_release" "argocd-apps" {
   chart      = "argocd-apps"
   name       = "argocd-apps"
   namespace  = "argocd"
-  version    = "5.17.1"
   repository = "https://argoproj.github.io/argo-helm"
   values = [
     file("argocd/flask-application.yaml")
