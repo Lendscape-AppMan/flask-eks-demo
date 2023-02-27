@@ -6,7 +6,7 @@ server:
      source:
        repoURL: https://github.com/Lendscape-AppMan/flask-eks-demo.git
        targetRevision: HEAD
-       path: argocd/manifests/cluster
+       path: argocd/manifests/flask-app
        directory:
          recurse: true
      destination:

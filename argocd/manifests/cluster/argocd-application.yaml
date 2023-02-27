@@ -7,7 +7,7 @@ spec:
   destination:
     namespace: flask-app
     server: https://kubernetes.default.svc
-  project: flask-app-project
+  project: flask-k8s-demo
   source:
     path: argocd/manifests/flask-app
     repoURL: https://github.com/Lendscape-AppMan/flask-eks-demo.git
