@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: flask-k8s-demo
-  namespace: flask-k8s-demo
+  namespace: flask-app
 spec:
   type: ClusterIP
   ports:

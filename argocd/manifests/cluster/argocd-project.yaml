@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: flask-app-project
+  name: flask-k8s-demo
   namespace: argocd
 spec:
   clusterResourceWhitelist:
